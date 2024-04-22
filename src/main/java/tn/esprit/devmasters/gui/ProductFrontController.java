@@ -59,4 +59,16 @@ public class ProductFrontController {
             }
         }
     }
+
+    @FXML
+    void goToAddProduct(ActionEvent event) {
+        try {
+            Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("views/AddProductFront.fxml"));
+            Parent parent = fxmlLoader.load();
+            stage.setScene(new Scene(parent));
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }

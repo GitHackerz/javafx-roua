@@ -23,9 +23,9 @@
                     </font>
                 </Text>
                 <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-                <VBox alignment="CENTER">
+                <VBox alignment="CENTER" spacing="10.0">
                     <children>
-                        <Button mnemonicParsing="false" styleClass="sidebar-button" text="Categorie">
+                        <Button mnemonicParsing="false" onAction="#goToAddProduct" prefHeight="48.0" prefWidth="237.0" styleClass="sidebar-button" text="Add Product" VBox.vgrow="ALWAYS">
                             <graphic>
                                 <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
                                     <image>
@@ -34,7 +34,7 @@
                                 </ImageView>
                             </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="sidebar-button-active" text="Produit">
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" styleClass="sidebar-button-active" text="Produit">
                             <graphic>
                                 <ImageView fitHeight="20.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
                                     <image>
